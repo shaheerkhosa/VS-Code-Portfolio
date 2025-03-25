@@ -3,6 +3,7 @@ import "./index.css";
 import Sidebar from "./components/Sidebar";
 import TopBar from "./components/TopBar";
 import MainContent from "./components/MainContent";
+import BottomBar from "./components/BottomBar";
 
 function App() {
   const [openTabs, setOpenTabs] = useState(["home.jsx"]); // Open Home by default
@@ -23,6 +24,7 @@ function App() {
         <Sidebar openFile={openFile} activeTab={activeTab} />
         <MainContent openTabs={openTabs} activeTab={activeTab} setActiveTab={setActiveTab} />
       </div>
+      <BottomBar />
     </div>
   );
 }

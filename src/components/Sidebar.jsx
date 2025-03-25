@@ -46,7 +46,7 @@ export default function Sidebar({ openFile, activeTab }) {
             />
           </button>
 
-          <button onClick={() => handleTabClick("contact", "contact.jsx")}>
+          <button onClick={() => handleTabClick("contact", "contact.html")}>
             <FiBookOpen
               className={`text-3xl ${
                 selectedTab === "contact" ? "text-white" : "text-gray-300"
@@ -54,7 +54,7 @@ export default function Sidebar({ openFile, activeTab }) {
             />
           </button>
 
-          <button onClick={() => handleTabClick("extras", "extras.jsx")}>
+          <button onClick={() => handleTabClick("extras", "extras.css")}>
             <FiGrid
               className={`text-3xl ${
                 selectedTab === "extras" ? "text-white" : "text-gray-300"
